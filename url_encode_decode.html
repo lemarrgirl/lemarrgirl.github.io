@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script>
+    function remove()
+    {
+        var thething = document.getElementById("isbn").value;
+        console.log(thething);
+        var newthing = thething.replace(/-/g, "");
+        console.log(newthing);
+        document.getElementById("output").innerText = newthing;
+    }
+</script>
+
+<body>
+
+    <h1>URL encoding/decoding</h1>
+    <input type="text" id="isbn">
+    <input onclick="remove()" type="button" value="Remove the dashes">
+    <h2 id="output">[output here]</h2>
+
+</body>
+
+</html>
